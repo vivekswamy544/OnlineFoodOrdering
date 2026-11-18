@@ -1,0 +1,225 @@
+
+/* General Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #333;
+}
+
+/* Navigation */
+
+header {
+    background-color: #e63946;
+    color: white;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.cart {
+    font-size: 18px;
+}
+
+/* Hero Section */
+
+.hero {
+    height: 350px;
+    background: linear-gradient(
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+    ),
+    url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1400")
+    center/cover;
+
+    color: white;
+    text-align: center;
+    padding-top: 110px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.order-btn {
+    background-color: #ffb703;
+    color: black;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Menu Section */
+
+#menu {
+    padding: 50px 5%;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 25px;
+    color: #e63946;
+}
+
+.categories {
+    margin-bottom: 30px;
+}
+
+.category-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: #ddd;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.category-btn:hover,
+.category-btn.active {
+    background-color: #e63946;
+    color: white;
+}
+
+/* Food Cards */
+
+.food-container {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+    );
+
+    gap: 25px;
+}
+
+.food-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.food-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.food-card h3 {
+    margin: 12px 0;
+}
+
+.food-card p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.price {
+    color: #e63946;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.add-btn {
+    background-color: #2a9d8f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background-color: #21867a;
+}
+
+/* Cart Section */
+
+#cart-section {
+    background-color: #f1faee;
+    padding: 40px 5%;
+    text-align: center;
+}
+
+#cart-items {
+    margin: 20px;
+    line-height: 2;
+}
+
+#checkout-btn {
+    padding: 12px 25px;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* About and Contact */
+
+#about,
+#contact {
+    padding: 40px 5%;
+    text-align: center;
+}
+
+#about p,
+#contact p {
+    line-height: 2;
+}
+
+/* Footer */
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+
+@media(max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        display: inline-block;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+}

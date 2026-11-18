@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Foodie Restaurant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+<header>
+    <div class="logo">Foodie Restaurant</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="cart">
+        🛒 Cart:
+        <span id="cart-count">0</span>
+    </div>
+</header>
+
+<!-- Home Section -->
+<section id="home" class="hero">
+
+    <h1>Welcome to Foodie Restaurant</h1>
+
+    <p>
+        Delicious food delivered to your doorstep!
+    </p>
+
+    <a href="#menu" class="order-btn">
+        Order Now
+    </a>
+
+</section>
+
+<!-- Menu Section -->
+<section id="menu">
+
+    <h2>Our Food Menu</h2>
+
+    <div class="categories">
+
+        <button class="category-btn active"
+                data-category="All">
+            All
+        </button>
+
+        <button class="category-btn"
+                data-category="Pizza">
+            Pizza
+        </button>
+
+        <button class="category-btn"
+                data-category="Burger">
+            Burger
+        </button>
+
+        <button class="category-btn"
+                data-category="Biryani">
+            Biryani
+        </button>
+
+        <button class="category-btn"
+                data-category="Drinks">
+            Drinks
+        </button>
+
+    </div>
+
+    <!-- Food Items -->
+    <div id="food-container" class="food-container">
+    </div>
+
+</section>
+
+<!-- Cart Section -->
+<section id="cart-section">
+
+    <h2>Your Shopping Cart</h2>
+
+    <div id="cart-items">
+        Your cart is empty.
+    </div>
+
+    <h3>
+        Total Amount:
+        ₹<span id="total-price">0</span>
+    </h3>
+
+    <button id="checkout-btn" onclick="checkout()">
+        Place Order
+    </button>
+
+    <p id="order-message"></p>
+
+</section>
+
+<!-- About Section -->
+<section id="about">
+
+    <h2>About Us</h2>
+
+    <p>
+        Foodie Restaurant provides fresh, tasty and
+        delicious food at affordable prices.
+        We believe in quality food and customer satisfaction.
+    </p>
+
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+
+    <h2>Contact Us</h2>
+
+    <p>Email: foodie@gmail.com</p>
+
+    <p>Phone: 9876543210</p>
+
+</section>
+
+<!-- Footer -->
+<footer>
+
+    <p>
+        © 2026 Foodie Restaurant.
+        All Rights Reserved.
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
